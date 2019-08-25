@@ -30,14 +30,15 @@ pixels = neopixel.NeoPixel(pixel_pin, num_pixels, brightness=0.2, auto_write=Fal
 
 while True:
 
-    for i in range(255):
-        pixels.fill((i, i, i))
+i == 0
+if i == 0:
+    i += 1
+    pixels.fill(i, i, i)
+    pixels.show()
+    elif i == 255:
+        i -= 1
+        pixels.fill(i, i, i)
         pixels.show()
-        if i == 255:
-            for i in reversed(range(255)):
-                pixels.fill((i, i, i))
-                pixels.show()
-        print(i)
 time.sleep(1)
 
 #    rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
