@@ -53,7 +53,7 @@ def rainbow_cycle(wait):
 def white_breath():
     x = 0
     while x == 0:
-        time.sleep(1)
+        time.sleep(0.1)
         for i in range(255):
             x = i
             pixels.fill((x, x, x))
@@ -62,7 +62,7 @@ def white_breath():
             time.sleep(0.01)
 
     while x == 254:
-        time.sleep(1)
+        time.sleep(0.1)
         for i in range(255, 0, -1):
             x = i
             pixels.fill((i, i, i))
