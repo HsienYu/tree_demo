@@ -56,13 +56,13 @@ def iter():
     while x == 0:
         for i in range(255):
             x = i
-            print(x)
+            # print(x)
             time.sleep(interval_time)
 
     while x == 254:
         for i in range(255, 0, -1):
             x = i
-            print(x)
+            # print(x)
             time.sleep(interval_time)
 
     return x
@@ -70,6 +70,7 @@ def iter():
 
 def white_breath():
     i = iter()
+    print(i)
     pixels.fill((i, i, i))
     pixels.show()
     time.sleep(0.001)
