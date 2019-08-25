@@ -55,7 +55,10 @@ while True:
     for i in range(0, 255):
         pixels.fill((i, i, i))
         pixels.show()
-
+        if i == 255:
+            for i in range(255, 0):
+                pixels.fill((i, i, i))
+                pixels.show()
     time.sleep(1)
 
     # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
