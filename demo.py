@@ -76,12 +76,12 @@ try:
         print("light start")
         # white_breath()
 
-        for i in range(num_pixels):
+        for i in range(0, num_pixels, 3):
             for r in range(255):
                 pixels[i] = (r, 0, 0)
                 pixels.show()
                 time.sleep(0.001)
-            j = i - 1
+            j = i - 3
             for y in range(255):
                 pixels[j] = (y, y, y)
                 pixels.show()
