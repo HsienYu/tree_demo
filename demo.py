@@ -38,7 +38,7 @@ def wheel(pos):
         r = 0
         g = int(pos*2)
         b = int(255 - pos*2)
-    return (r, 155, 255) if ORDER == neopixel.RGB or ORDER == neopixel.GRB else (r, g, b, 0)
+    return (255, 155, b) if ORDER == neopixel.RGB or ORDER == neopixel.GRB else (r, g, b, 0)
 
 
 def rainbow_cycle(wait):
@@ -72,7 +72,7 @@ def white_breath():
 try:
     while True:
         print("light start")
-        # white_breath()
+        white_breath()
 
         # for i in range(num_pixels):
         #     for r in range(255):
