@@ -79,6 +79,9 @@ try:
         for i in range(num_pixels):
             pixels[i] = (255, 0, 0)
             pixels.show()
+            j = i - 1
+            pixels[j] = (255, 255, 255)
+            pixels.show()
             time.sleep(1)
 
         # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
