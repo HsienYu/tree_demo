@@ -71,8 +71,11 @@ def white_breath():
             time.sleep(interval_time)
 
 
-while True:
-
-    white_breath()
-
-    # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
+try:
+    while True:
+        print("light start")
+        white_breath()
+        # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
+        time.sleep(2)
+except KeyboardInterrupt:
+    print("KeyboardInterrupt has been caught.")
