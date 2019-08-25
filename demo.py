@@ -69,9 +69,9 @@ def white_breath():
             time.sleep(interval_time)
 
 
-def repeat_fun(times, f):
+def repeat_fun(times, f, *args):
     for i in range(times):
-        f()
+        f(*args)
 
 
 try:
@@ -79,7 +79,7 @@ try:
         print("light start")
         repeat_fun(5, white_breath)
         # rainbow cycle with 1ms delay per step
-        repeat_fun(3, rainbow_cycle(0.01))
+        repeat_fun(3, rainbow_cycle, 0.01)
         # white_breath()
 
         # for i in range(num_pixels):
