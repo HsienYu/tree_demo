@@ -80,12 +80,12 @@ try:
             for r in range(255):
                 pixels[i] = (r, 0, 0)
                 pixels.show()
-                time.sleep(0.01)
+                time.sleep(0.001)
             j = i - 1
             for y in range(255):
-                pixels[j] = (255, 255, 255)
+                pixels[j] = (y, y, y)
                 pixels.show()
-                time.sleep(0.01)
+                time.sleep(0.001)
             time.sleep(0.01)
 
         # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
