@@ -53,7 +53,7 @@ def rainbow_cycle(wait):
 while True:
 
     for i in range(0, 255):
-        pixels.fill(i, i, i)
+        pixels.fill((i, i, i))
         pixels.show()
 
     time.sleep(1)
