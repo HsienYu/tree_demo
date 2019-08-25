@@ -72,6 +72,6 @@ def white_breath():
 while True:
 
     white_breath()
-    time.sleep(0.1)
+    time.sleep(0.001)
 
     # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
