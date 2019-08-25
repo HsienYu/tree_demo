@@ -41,6 +41,9 @@ def wheel(pos):
     return (r, g, b) if ORDER == neopixel.RGB or ORDER == neopixel.GRB else (r, g, b, 0)
 
 
+def white_breath(pos):
+
+
 def rainbow_cycle(wait):
     for j in range(255):
         for i in range(num_pixels):
@@ -51,25 +54,11 @@ def rainbow_cycle(wait):
 
 
 while True:
-    # Comment this line out if you have RGBW/GRBW NeoPixels
-    pixels.fill((255, 0, 0))
-    # Uncomment this line if you have RGBW/GRBW NeoPixels
-    # pixels.fill((255, 0, 0, 0))
-    pixels.show()
+
+    for i in range(0, 255):
+        pixels.fill(i, i, i)
+        pixels.show()
+
     time.sleep(1)
 
-    # Comment this line out if you have RGBW/GRBW NeoPixels
-    pixels.fill((0, 255, 0))
-    # Uncomment this line if you have RGBW/GRBW NeoPixels
-    # pixels.fill((0, 255, 0, 0))
-    pixels.show()
-    time.sleep(1)
-
-    # Comment this line out if you have RGBW/GRBW NeoPixels
-    pixels.fill((0, 0, 255))
-    # Uncomment this line if you have RGBW/GRBW NeoPixels
-    # pixels.fill((0, 0, 255, 0))
-    pixels.show()
-    time.sleep(1)
-
-    rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
+    # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
