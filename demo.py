@@ -75,7 +75,6 @@ try:
     while True:
         print("light start")
         white_breath()
-        rainbow_cycle(0.1)    # rainbow cycle with 1ms delay per step
-        time.sleep(2)
+        rainbow_cycle(0.01)    # rainbow cycle with 1ms delay per step
 except KeyboardInterrupt:
     print("KeyboardInterrupt has been caught.")
