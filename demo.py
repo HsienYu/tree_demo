@@ -38,7 +38,7 @@ def wheel(pos):
         r = 0
         g = int(pos*2)
         b = int(255 - pos*2)
-    return (255, g, 255) if ORDER == neopixel.RGB or ORDER == neopixel.GRB else (r, g, b, 0)
+    return (r, 155, 255) if ORDER == neopixel.RGB or ORDER == neopixel.GRB else (r, g, b, 0)
 
 
 def rainbow_cycle(wait):
