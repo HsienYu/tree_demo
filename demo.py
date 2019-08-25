@@ -50,15 +50,26 @@ def rainbow_cycle(wait):
         time.sleep(wait)
 
 
+def white_breath():
+    x = 0
+    while x == 0:
+        for i in range(255):
+            x = i
+            pixels.fill((x, x, x))
+            pixels.show()
+            print(x)
+
+    while x == 254:
+        for i in range(255, 0, -1):
+            x = i
+            pixels.fill((i, i, i))
+            pixels.show()
+            print(x)
+
+
 while True:
 
-    for i in range(0, 255):
-        pixels.fill((i, i, i))
-        pixels.show()
-        if i == 255:
-            for i in range(255, 0):
-                pixels.fill((i, i, i))
-                pixels.show()
+    white_breath()
     time.sleep(1)
 
     # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
