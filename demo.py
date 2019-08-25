@@ -41,9 +41,6 @@ def wheel(pos):
     return (r, g, b) if ORDER == neopixel.RGB or ORDER == neopixel.GRB else (r, g, b, 0)
 
 
-def white_breath(pos):
-
-
 def rainbow_cycle(wait):
     for j in range(255):
         for i in range(num_pixels):
