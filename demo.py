@@ -78,6 +78,8 @@ try:
     while True:
         print("light start")
         repeat_fun(5, white_breath)
+        # rainbow cycle with 1ms delay per step
+        repeat_fun(3, rainbow_cycle(0.01))
         # white_breath()
 
         # for i in range(num_pixels):
@@ -92,6 +94,5 @@ try:
         #         time.sleep(0.001)
         #     time.sleep(0.01)
 
-        rainbow_cycle(0.01)    # rainbow cycle with 1ms delay per step
 except KeyboardInterrupt:
     print("KeyboardInterrupt has been caught.")
