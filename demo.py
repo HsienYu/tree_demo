@@ -52,6 +52,7 @@ def rainbow_cycle(wait):
 
 def white_breath():
     x = 0
+    time.sleep(0.01)
     while x == 0:
         for i in range(255):
             x = i
