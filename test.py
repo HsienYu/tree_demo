@@ -2,21 +2,18 @@ import time
 
 
 def white_breath():
-    x = 0
-    interval_time = 0.007
+    yield x = 0
     while x == 0:
         for i in range(255):
             x = i
-            print(x)
-            time.sleep(interval_time)
+            # print(x)
 
     while x == 254:
         for i in range(255, 0, -1):
             x = i
-            print(x)
-            time.sleep(interval_time)
+            # print(x)
 
-    return x
+    yield x
 
 
 while True:
