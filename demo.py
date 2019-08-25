@@ -72,7 +72,7 @@ def white_breath():
 try:
     while True:
         print("light start")
-        white_breath()
+        # white_breath()
 
         # for i in range(num_pixels):
         #     for r in range(255):
