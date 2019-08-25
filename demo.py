@@ -59,7 +59,6 @@ def white_breath():
             pixels.fill((x, x, x))
             pixels.show()
             print(x)
-            time.sleep(0.001)
 
     while x == 254:
         time.sleep(0.1)
@@ -68,11 +67,11 @@ def white_breath():
             pixels.fill((i, i, i))
             pixels.show()
             print(x)
-            time.sleep(0.001)
 
 
 while True:
 
     white_breath()
+    time.sleep(0.01)
 
     # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
