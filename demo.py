@@ -26,18 +26,18 @@ def wheel(pos):
         r = g = b = 0
     elif pos < 85:
         r = int(pos * 2)
-        g = int(255 - pos*2)
+        g = int(255 - pos*1)
         b = 0
     elif pos < 170:
         pos -= 85
-        r = int(255 - pos*2)
+        r = int(255 - pos*1)
         g = 0
         b = int(pos*2)
     else:
         pos -= 170
         r = 0
         g = int(pos*2)
-        b = int(255 - pos*2)
+        b = int(255 - pos*1)
     return (255, 255, b) if ORDER == neopixel.RGB or ORDER == neopixel.GRB else (r, g, b, 0)
 
 
@@ -86,6 +86,6 @@ try:
         #         time.sleep(0.001)
         #     time.sleep(0.01)
 
-        rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
+        rainbow_cycle(0.01)    # rainbow cycle with 1ms delay per step
 except KeyboardInterrupt:
     print("KeyboardInterrupt has been caught.")
