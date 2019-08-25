@@ -58,7 +58,7 @@ def white_breath():
             pixels.fill((x, x, x))
             pixels.show()
             print(x)
-            time.sleep(0.01)
+            time.sleep(0.005)
 
     while x == 254:
         for i in range(255, 0, -1):
@@ -66,7 +66,7 @@ def white_breath():
             pixels.fill((i, i, i))
             pixels.show()
             print(x)
-            time.sleep(0.01)
+            time.sleep(0.005)
 
 
 while True:
