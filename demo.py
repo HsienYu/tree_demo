@@ -86,7 +86,7 @@ try:
                 pixels[j] = (255, 255, 255)
                 pixels.show()
                 time.sleep(0.01)
-            time.sleep(1)
+            time.sleep(0.01)
 
         # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
 except KeyboardInterrupt:
