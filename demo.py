@@ -69,10 +69,16 @@ def white_breath():
             time.sleep(interval_time)
 
 
+def repeat_fun(times, f):
+    for i in range(times):
+        f()
+
+
 try:
     while True:
         print("light start")
-        white_breath()
+        repeat_fun(5, white_breath)
+        # white_breath()
 
         # for i in range(num_pixels):
         #     for r in range(255):
