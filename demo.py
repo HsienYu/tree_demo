@@ -74,7 +74,9 @@ def white_breath():
 try:
     while True:
         print("light start")
-        white_breath()
-        rainbow_cycle(0.01)    # rainbow cycle with 1ms delay per step
+        # white_breath()
+        pixels[0] = (255, 0, 0)
+
+        # rainbow_cycle(0.001)    # rainbow cycle with 1ms delay per step
 except KeyboardInterrupt:
     print("KeyboardInterrupt has been caught.")
